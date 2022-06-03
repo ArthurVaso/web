@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.error {
+	color: red;
+	font-size: 0.7em;
+}
+
+.oculto {
+	visibility: hidden;
+}
+
+.visivel {
+	visibility: visible;
+}

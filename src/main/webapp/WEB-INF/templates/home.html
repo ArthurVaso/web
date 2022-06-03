@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lojinha do Zé II</title>
+</head>
+<body>
+	<h1>Lojinha do Zézinho</h1>
+	
+	<p th:if="${session.usuario}"> Olá, <span th:text="${session.usuario.nome}">usuário</span>!
+		(<a href="logout">Sair</a>)
+	</p>
+	
+	<p th:if="${not session.usuario}">
+		<a href="login">Login</a>
+	</p>
+	
+	
+
+<ul>
+	<li>
+		<a href="cadastrar">Cadastrar clientes</a>
+	</li>
+	<li th:if="${session.usuario}">
+		<a href="listar">Listar clientes</a>
+	</li>
+</ul>
+
+</body>
+</html>
